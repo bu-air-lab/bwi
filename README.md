@@ -75,6 +75,14 @@ is recommended.
 ### For Version 3 Robot
 
 To use this code on the Version 3 Segway Robot, one must also define
-some enviroment variables.  The steps for doing this and the specific
-environment variables are described on the project wiki.  Eventually,
-that should no longer be necessary.
+some enviroment variables. 
+
+```
+echo "export SEGWAY_INTERFACE_ADDRESS=10.66.171.1" >> ~/.bashrc
+echo "export SEGWAY_IP_ADDRESS=10.66.171.5" >> ~/.bashrc
+echo "export SEGWAY_IP_PORT_NUM=8080" >> ~/.bashrc
+echo "export SEGWAY_BASE_PLATFORM=RMP_110" >> ~/.bashrc
+echo "export SEGWAY_PLATFORM_NAME=RMP_110" >> ~/.bashrc
+```
+
+
