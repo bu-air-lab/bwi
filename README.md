@@ -52,7 +52,7 @@ Next, clone the source repositories:
 $ source /opt/ros/$ROS_DISTRO/setup.bash
 $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws
-$ wstool init src https://raw.githubusercontent.com/utexas-bwi/bwi/master/rosinstall/$ROS_DISTRO.rosinstall
+$ wstool init src https://raw.githubusercontent.com/astrosaeed/bwi/master/rosinstall/kinetic.rosinstall
 ```
 
 Install all dependencies:

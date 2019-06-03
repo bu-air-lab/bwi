@@ -1,30 +1,16 @@
 - git:
-    local-name: agile_grasp
-    uri: https://github.com/utexas-bwi/agile_grasp.git
-    version: kinetic
-- git:
     local-name: bwi
-    uri: https://github.com/utexas-bwi/bwi.git
+    uri: https://github.com/astrosaeed/bwi.git
     version: master
 - git:
     local-name: bwi_common
-    uri: https://github.com/utexas-bwi/bwi_common.git
+    uri: https://github.com/astrosaeed/bwi_common.git
     version: master
-- git:
-    local-name: kinova-ros
-    uri: https://github.com/utexas-bwi/kinova-ros.git
-    version: kinetic
-- git:
-    local-name: libsegwayrmp
-    uri: https://github.com/utexas-bwi/libsegwayrmp.git
 - git:
     local-name: segbot
-    uri: https://github.com/utexas-bwi/segbot.git
+    uri: https://github.com/astrosaeed/segbot.git
     version: master
 - git:
-    local-name: segway_rmp
-    uri: https://github.com/segwayrmp/segway_rmp.git
-- git:
     local-name: segway_v3
-    uri: https://github.com/utexas-bwi/segway_v3.git
+    uri: https://github.com/astrosaeed/segway_v3.git
     version: master
