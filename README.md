@@ -97,7 +97,7 @@ $ roslaunch bwi_launch segbot_bu.launch
 If you need to drive the segbot with a controller use the bwi_joystick_teleop package. Double check that the joystick is in X mode and not D mode or it will not work as expected. You can check this by looking at the physical switch on the joystick. 
 ```
 $ roslaunch bwi_joystick_teleop joystick_teleop.launch
-
+```
 
 ### Making a map with the segbot
 
