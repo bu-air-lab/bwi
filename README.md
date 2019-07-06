@@ -52,7 +52,7 @@ Next, clone the source repositories:
 $ source /opt/ros/$ROS_DISTRO/setup.bash
 $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws
-$ wstool init src https://raw.githubusercontent.com/astrosaeed/bwi/master/rosinstall/kinetic.rosinstall
+$ wstool init src https://raw.githubusercontent.com/astrosaeed/bwi/temp/rosinstall/kinetic.rosinstall
 ```
 
 Install all dependencies:
@@ -84,5 +84,35 @@ echo "export SEGWAY_IP_PORT_NUM=8080" >> ~/.bashrc
 echo "export SEGWAY_BASE_PLATFORM=RMP_110" >> ~/.bashrc
 echo "export SEGWAY_PLATFORM_NAME=RMP_110" >> ~/.bashrc
 ```
+
+##Usage
+
+### Navigation
+
+To launch bwi and all packages required for navigation
+```
+$ roslaunch bwi_launch segbot_bu.launch
+```
+
+If you need to drive the segbot with a controller use the bwi_joystick_teleop package. Double check that the joystick is in X mode and not D mode or it will not work as expected. You can check this by looking at the physical switch on the joystick. 
+```
+$ roslaunch bwi_joystick_teleop joystick_teleop.launch
+
+
+### Making a map with the segbot
+
+You'll need to turn on the base segway drivers followed by gmapping and rviz.
+```
+$ roslaunch segbot_navigation robot_with_gmapping_v3.launch
+$ roslaunch bwi_joystick_teleop joystick_teleop.launch
+
+```
+
+You can see your map being created in real time by selecting the map topic in rviz. When you are done you can save your map with the map_server package.
+```
+$ rosrun map_server map_saver -f ~/<map_name>
+```
+
+That will save a map in your selected directory.
 
 
