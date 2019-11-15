@@ -115,4 +115,25 @@ $ rosrun map_server map_saver -f ~/<map_name>
 
 That will save a map in your selected directory.
 
+### Task Planner
 
+#### Semantic map
+
+To label the map, you can use the logical marker tool:
+
+```
+$ rosrun bwi_planning_common logical_marker _map_data:=~/<map_name> _data_directory:=~/<map_data_directoy>
+```
+
+#### Current map
+
+![](https://github.com/astrosaeed/bwi/blob/temp/images/bu_semantic_map.jpg)
+
+
+#### Visit doors
+
+You can let the robot navigate between various doors.
+
+```
+$ rosrun bwi_tasks visit_door_list
+```
