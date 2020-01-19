@@ -23,6 +23,10 @@
   <include file="$(find segbot_bringup)/launch/segbot_bu.launch" >
     <arg name="gui" value="$(arg gui)" />
   </include>
+
+  <include file="$(find astra_camera)/launch/astrapro.launch" >
+  </include> 
+
 <!--
   <include file="$(find bwi_logging)/launch/record.launch" />
 -->
