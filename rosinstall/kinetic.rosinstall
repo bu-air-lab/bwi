@@ -14,3 +14,7 @@
     local-name: segway_v3
     uri: https://github.com/astrosaeed/segway_v3.git
     version: temp
+- git:
+    local-name: ros_astra_camera
+    uri: https://github.com/bu-air-lab/ros_astra_camera.git
+    version: master
