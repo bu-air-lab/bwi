@@ -1,19 +1,19 @@
 - git:
     local-name: bwi
-    uri: https://github.com/astrosaeed/bwi.git
-    version: temp
+    uri: https://github.com/bu-air-lab/bwi.git
+    version: master-bu
 - git:
     local-name: bwi_common
-    uri: https://github.com/astrosaeed/bwi_common.git
-    version: master
+    uri: https://github.com/bu-air-lab/bwi_common.git
+    version: master-bu
 - git:
     local-name: segbot
-    uri: https://github.com/astrosaeed/segbot.git
-    version: temp
+    uri: https://github.com/bu-air-lab/segbot.git
+    version: master-bu
 - git:
     local-name: segway_v3
-    uri: https://github.com/astrosaeed/segway_v3.git
-    version: temp
+    uri: https://github.com/bu-air-lab/segway_v3.git
+    version: master-bu
 - git:
     local-name: ros_astra_camera
     uri: https://github.com/bu-air-lab/ros_astra_camera.git
