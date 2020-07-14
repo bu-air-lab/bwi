@@ -4,6 +4,10 @@ This repository contains top-level ROS packages for the Building Wide
 Intelligence (BWI) project of the University of Texas at Austin
 Computer Science Department.
 
+## Branches
+
+The main branch is master-bu, and the master-ut branch is a copy of forked version from UT people.
+
 ## BWI Repository Hierarchy
 
 Packages contained in various released BWI repostories may depend on
